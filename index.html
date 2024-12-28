@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Calendar</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calendar">
+            <div class="header">
+                <div class="year-box">
+                    <button id="prevYear" class="btn btn-secondary btn-sm">&lt;</button>
+                    <span id="year"></span>
+                    <button id="nextYear" class="btn btn-secondary btn-sm">&gt;</button>
+                </div>
+                <div class="month-box">
+                    <button id="prevMonth" class="btn btn-secondary btn-sm">&lt;</button>
+                    <span id="month"></span>
+                    <button id="nextMonth" class="btn btn-secondary btn-sm">&gt;</button>
+                </div>
+            </div>
+            <div id="month-container" class="row">
+                <!-- Month will be inserted here by JavaScript -->
+            </div>
+        </div>
+        <footer class="footer">
+            Designed by MD.GALIB
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

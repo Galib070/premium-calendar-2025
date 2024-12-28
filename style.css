@@ -1,0 +1,92 @@
+body {
+    background-color: #121212;
+    font-family: Arial, sans-serif;
+    color: #e0e0e0;
+    padding: 20px;
+}
+
+.calendar {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.year-box, .month-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #e0e0e0;
+}
+
+.year-box button, .month-box button {
+    margin: 0 10px;
+}
+
+#month-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.month {
+    width: 100%;
+    border: 1px solid #333;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.month-header {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.days-container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    color: #ffffff;
+}
+
+.day-header {
+    font-weight: bold;
+    text-align: center;
+    background-color: #333;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.day {
+    width: 30px;
+    height: 30px;
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #555;
+    border-radius: 4px;
+    background-color: #222;
+    text-align: center; /* Ensure text is centered */
+}
+
+.day.empty {
+    background-color: transparent;
+    border: none;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #ffffff;
+}
